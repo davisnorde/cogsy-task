@@ -8,7 +8,8 @@ const data = [
     timestamp: 'Last edited 2 days ago',
     description: 'test',
     thumbnail: true,
-    hasToggleFavorite: true
+    hasToggleFavorite: true,
+    hasMenuTrigger: true,
   },
   {
     id: 2,
@@ -16,7 +17,26 @@ const data = [
     timestamp: 'Last edited 3 days ago',
     description: '',
     thumbnail: true,
-    hasToggleFavorite: true
+    hasToggleFavorite: true,
+    hasMenuTrigger: true,
+  },
+  {
+    id: 3,
+    heading: 'Countdown Announcement',
+    timestamp: 'Last edited 2 days ago',
+    description: 'A card is a flexible and extensible content container. It includes a wide variety of content, thumbnails, video, images, subheadings, actions, and content.',
+    thumbnail: false,
+    hasToggleFavorite: true,
+    hasMenuTrigger: true,
+  },
+  {
+    id: 4,
+    heading: 'Countdown Announcement',
+    timestamp: 'Last edited 2 days ago',
+    description: '',
+    thumbnail: false,
+    hasToggleFavorite: false,
+    hasMenuTrigger: false,
   },
 ]
 
@@ -30,19 +50,10 @@ const App = () => {
           description={item.description}
           hasThumbnail={item.thumbnail}
           hasToggleFavorite={item.hasToggleFavorite}
+          hasMenuTrigger={item.hasMenuTrigger}
           key={item.id}
         />
       ))}
-      {/* <Card
-        heading="Countdown Announcement Longer Heading"
-        hasThumbnail={true}
-        hasToggleFavorite={true}
-      />
-      <Card
-        heading="Countdown Announcement"
-        hasThumbnail={true}
-        hasToggleFavorite={true}
-      /> */}
     </div>
   );
 }
