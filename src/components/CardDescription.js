@@ -9,7 +9,11 @@ const CardDescription = ({children}) => {
 }
 
 CardDescription.propTypes = {
-  children: PropTypes.string
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+    PropTypes.string,
+  ]),
 }
 
 export default CardDescription

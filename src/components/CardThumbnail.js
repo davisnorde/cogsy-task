@@ -1,27 +1,25 @@
 import PropTypes from 'prop-types'
 import Fallback from '../assets/thumbnail.png'
 
-const CardThumbnail = ({type, src, alt = "", ...otherProps}) => {
+const CardThumbnail = ({type, ...otherProps}) => {
   return (
     <div className="-mx-6 -mt-2">
-      {!src ? (
-        <img src={Fallback} alt="" className="rounded-t-default" />
-      ) : (
-        <>
-          {(type === 'image' || type === 'svg') && <img src={src} alt={alt} {...otherProps} className="rounded-t-default" />}
-          {type === 'video' && <video src={src} {...otherProps} className="rounded-t-default" />}
-        </>
-      )}
+      <div style={{'--aspect-ratio': '4/3'}} className="rounded-t-default overflow-hidden">
+        {!otherProps.src ? (
+          <img src={Fallback} alt="" className="h-full w-full object-cover" />
+        ) : (
+          <>
+            {(type === 'image' || type === 'svg') && <img alt={otherProps.alt || ""} className="h-full w-full object-cover" {...otherProps} />}
+            {type === 'video' && <video className="h-full w-full object-cover" {...otherProps}/>}
+          </>
+        )}
+      </div>
     </div>
   )
 }
 
 CardThumbnail.propTypes = {
-  type: PropTypes.string,
-  src: PropTypes.string,
-  alt: PropTypes.string,
-  autoPlay: PropTypes.bool,
-  muted: PropTypes.bool,
+  type: PropTypes.oneOf(['image', 'svg', 'video']),
 }
 
 export default CardThumbnail
