@@ -11,6 +11,9 @@ module.exports = {
         'secondary': '#aacbff',
         'support': '#d2d7df',
         'dark': '#2a2941',
+      },
+      fontFamily: {
+        'display': ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
       }
     },
   },
