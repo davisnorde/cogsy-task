@@ -3,17 +3,17 @@ import CardDescription from './components/CardDescription'
 import CardEditMenu from './components/CardEditMenu'
 import CardFooter from './components/CardFooter'
 import CardHeading from './components/CardHeading'
+import CardSvg from './assets/card-svg.svg'
 import CardTimestamp from './components/CardTimestamp'
 import CardThumbnail from './components/CardThumbnail'
 import CardToggle from './components/CardToggle'
-import CardSvg from './assets/card-svg.svg'
 
 const App = () => {
   return (
     <main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 py-12 container mx-auto">
       <Card>
         <CardThumbnail />
-        <CardHeading>Countdown Announcement</CardHeading>
+        <CardHeading>Countdown Announcement That is Very Long</CardHeading>
         <CardTimestamp datetime="2021-02-28T19:15" />
         <CardFooter>
           <CardToggle />
