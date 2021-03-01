@@ -1,4 +1,3 @@
-import './App.css'
 import Card from './components/Card'
 import CardDescription from './components/CardDescription'
 import CardEditMenu from './components/CardEditMenu'
@@ -7,7 +6,7 @@ import CardHeading from './components/CardHeading'
 import CardSvg from './assets/card-svg.svg'
 import CardTimestamp from './components/CardTimestamp'
 import CardThumbnail from './components/CardThumbnail'
-import CardToggle from './components/CardToggle'
+import CardFavoriteToggle from './components/CardFavoriteToggle'
 
 const App = () => {
   return (
@@ -17,7 +16,7 @@ const App = () => {
         <CardHeading>Countdown Announcement That is Very Long</CardHeading>
         <CardTimestamp datetime="2021-02-28T19:15" />
         <CardFooter>
-          <CardToggle />
+          <CardFavoriteToggle />
           <CardEditMenu />
         </CardFooter>
       </Card>
@@ -27,7 +26,7 @@ const App = () => {
         <CardHeading>Countdown Announcement</CardHeading>
         <CardTimestamp datetime="2021-02-27T19:15" />
         <CardFooter>
-          <CardToggle />
+          <CardFavoriteToggle />
           <CardEditMenu />
         </CardFooter>
       </Card>
@@ -37,7 +36,7 @@ const App = () => {
         <CardHeading>Countdown Announcement</CardHeading>
         <CardTimestamp datetime="2021-02-27T19:15" />
         <CardFooter>
-          <CardToggle />
+          <CardFavoriteToggle />
           <CardEditMenu />
         </CardFooter>
       </Card>
@@ -47,7 +46,7 @@ const App = () => {
         <CardHeading>Countdown Announcement</CardHeading>
         <CardTimestamp datetime="2021-02-27T19:15" />
         <CardFooter>
-          <CardToggle />
+          <CardFavoriteToggle />
           <CardEditMenu />
         </CardFooter>
       </Card>
@@ -59,7 +58,7 @@ const App = () => {
           A card is a flexible and extensible content container. It includes a wide variety of content, thumbnails, video, images, subheadings, actions, and content.
         </CardDescription>
         <CardFooter>
-          <CardToggle />
+          <CardFavoriteToggle />
           <CardEditMenu />
         </CardFooter>
       </Card>
