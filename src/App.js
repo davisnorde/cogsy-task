@@ -1,3 +1,4 @@
+import './App.css'
 import Card from './components/Card'
 import CardDescription from './components/CardDescription'
 import CardEditMenu from './components/CardEditMenu'
