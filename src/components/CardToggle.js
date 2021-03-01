@@ -11,7 +11,7 @@ const CardToggle = () => {
     <Switch
       checked={isFavorite}
       onChange={setIsFavorite}
-      // className={`${isFavorite ? 'bg-green-300' : 'bg-red-300'} w-4 h-4`}
+      className="focus:outline-none focus:ring focus:ring-secondary rounded-sm"
       >
         {({checked}) => (
           checked ? <IsFavorite /> : <IsNotFavorite/>
